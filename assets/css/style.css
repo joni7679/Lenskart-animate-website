@@ -15,7 +15,8 @@
     src: url('../fonts/Satoshi-Variable.ttf');
 }
 
-main{
+main {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+    background: #e7e7e0;
 }

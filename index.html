@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenskart UI</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-
-    <main class="bg-[#e7e7e0]">
+    <main>
         <header class="flex justify-between items-center p-6">
             <h1 class="text-2xl font-light tracking-wide">LENSKART</h1>
             <button class="bg-black text-white px-6 py-3 rounded-full flex items-center gap-2">
@@ -31,15 +31,51 @@
                 </h2>
             </div>
         </section>
-
-        <section id="superman" class="w-full mx-auto container px-6 relative">
-            <div class="video-part-superman w-[24rem] h-[10rem] bg-red-900 rounded overflow-hidden absolute top-[30px]">
-                <video autoplay loop muted class="w-full h-full object-cover " src="./supermanintro_ysigxv.mp4"></video>
+        <section id="superman" class="w-full min-h-screen mx-auto container px-6 relative">
+            <div class="superman-video-box w-[24rem] h-[15rem] bg-red-900   absolute top-[30px]">
+                <video autoplay loop muted class="w-full h-full object-cover rounded "
+                    src="./supermanintro_ysigxv.mp4"></video>
+                <p class="mt-2 font-light text-2xl">Lenskart X Superman</p>
             </div>
             <div class="w-full">
                 <h1 class="text-[14rem] font-medium uppercase font-[Satoshi-Variable]">superman</h1>
             </div>
 
+        </section>
+        <section class="w-full h-screen px-5 container mx-auto py-5 mt-[20%]">
+            <div class="grid md:grid-cols-2">
+                <div>
+                    <h1 class="font-[Satoshi-Variable] text-2xl uppercase">Lenskart & superman</h1>
+                </div>
+                <div>
+                    <h2>Our Belief </h2>
+                    <div>
+                        <p class="text-[3rem]  tracking-[-6px] font-[ppneuemontrealmono] uppercase">These frames aren’t
+                            just
+                            part of the look — they’re
+                            the real hero of the day.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 mt-9 gap-6">
+                        <div>
+                            <p class="text-sm font-light font-[ppneuemontrealmono]">
+                                These aren’t just glasses — they’re precision, power, and personality in one frame. They
+                                sharpen your vision, elevate your presence, and say more than words ever could.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-sm font-light font-[ppneuemontrealmono]">
+                                They’re not just built to see — they’re built to be seen. In the right hands, they
+                                become confidence in disguise.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="shop-section min-h-screen w-full  container py-3 relative">
+           <div class="absolute w-full h-full bg-red-800">
+<img src="" alt="">
+           </div>
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
@@ -48,6 +84,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
         integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
