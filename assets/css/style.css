@@ -20,3 +20,11 @@ main {
     overflow: hidden;
     background: #e7e7e0;
 }
+
+.img-box {
+    width: 0%;
+    height: 100vh;
+    background: url('../imges/shop.jpeg');
+    background-size: cover;
+    background-position: center;
+}

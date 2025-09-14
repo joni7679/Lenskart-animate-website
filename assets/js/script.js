@@ -13,6 +13,8 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+gsap.registerPlugin(ScrollTrigger);
+
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: "#superman",
@@ -20,7 +22,7 @@ let tl = gsap.timeline({
         end: "200% bottom",
         pin: true,
         scrub: 2,
-        markers: true,
+        // markers: true,
     }
 });
 
@@ -55,6 +57,19 @@ let supermanSection = document.querySelector("#superman");
 
 supermanSection.addEventListener("mousemove", (e) => {
     let rect = supermanVideoBox.getBoundingClientRect();
-   console.log(e);
-   
+    console.log(e);
+
+});
+
+gsap.to(".img-box", {
+    width: "100%",
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".shop-section",
+        start: "top top",
+        end: "200% bottom",
+        pin: true,
+        scrub: 2,
+        // markers: true,
+    }
 });
