@@ -1,0 +1,21 @@
+@font-face {
+    font-family: ppneuemontrealmono;
+    src: url('../fonts/ppneuemontrealmono-book-webfont.ttf');
+}
+
+
+@font-face {
+    font-family: t1korium;
+    src: url('../fonts/t1korium-2kg.ttf');
+}
+
+
+@font-face {
+    font-family: Satoshi-Variable;
+    src: url('../fonts/Satoshi-Variable.ttf');
+}
+
+main{
+    width: 100%;
+    overflow-x: hidden;
+}
