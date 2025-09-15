@@ -57,7 +57,10 @@ let supermanSection = document.querySelector("#superman");
 
 supermanSection.addEventListener("mousemove", (e) => {
     let rect = supermanVideoBox.getBoundingClientRect();
-    console.log(e);
+    console.log(e.clientX);
+    console.log(e.clientY);
+
+
 
 });
 
@@ -73,3 +76,52 @@ gsap.to(".img-box", {
         // markers: true,
     }
 });
+function ourProductsSection() {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".our-products-section",
+            start: "top top",
+            end: "200% bottom",
+            pin: true,
+            scrub: 2,
+            // markers: true,
+        }
+    }, "a")
+
+    tl.to(".product-des", {
+        top: "30%",
+        opacity: "0",
+        ease: "power2.out",
+
+    })
+    tl.to(".product", {
+        top: "30%",
+        width: "50%",
+        xPercent: 50,
+        ease: "power2.out",
+    }, "a=-0.4")
+
+
+
+
+}
+ourProductsSection();
+function lenskartCollectionAnimation() {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".lenskart-collection",
+            start: "top top",
+            end: "200% bottom",
+            pin: true,
+            scrub: 1.5,
+            markers: true,
+        }
+    });
+    tl.to(".collection-part", {
+        width: "100%",
+        height: "100vh",
+        ease: "power2.out",
+        backgroundColor: "red",
+    });
+}
+lenskartCollectionAnimation();

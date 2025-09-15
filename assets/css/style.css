@@ -28,3 +28,9 @@ main {
     background-size: cover;
     background-position: center;
 }
+
+.collection-part{
+     background: url('../imges/collection.jpg');
+    background-size: cover;
+    background-position: center;
+}
